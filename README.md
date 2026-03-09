@@ -36,22 +36,6 @@ Metode:
 - `get_info`: Mengembalikan dictionary dengan semua informasi buku.
 - `is_published_after`: Mengecek apakah buku diterbitkan setelah tahun tertentu.
 
-## UML Class Diagram
-```
-classDiagram
-    class Book {
-        - title: str
-        - author: str
-        - isbn: str
-        - year: int
-        - genre: str
-        + __init__(title: str, author: str, isbn: str, year: int, genre: str)
-        + __str__(): str
-        + get_info(): dict
-        + is_published_after(year: int): bool
-    }
-```
-
 ## Implementasi Kode
 Kode diimplementasikan dalam `book.py`. Lihat file tersebut untuk detail implementasi.
 
@@ -71,16 +55,3 @@ Semua test berhasil: 6 tests passed.
 
 ## Kesimpulan
 Implementasi ini menunjukkan konsep OOP dasar dengan class Book yang sederhana, didokumentasikan dengan UML, dan diuji dengan unit testing untuk memastikan kebenaran kode.
-
-classDiagram
-    class Book {
-        -String title
-        -String author
-        -String isbn
-        -int year
-        -String genre
-        +__init__(title, author, isbn, year, genre)
-        +__str__() String
-        +get_info() Dict
-        +is_published_after(year) Boolean
-    }

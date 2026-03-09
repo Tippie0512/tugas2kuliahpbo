@@ -1,0 +1,25 @@
+@startuml
+!define RECTANGLE class
+
+skinparam class {
+    BackgroundColor White
+    ArrowColor Black
+    BorderColor Black
+}
+
+title Class Diagram - Book (Tugas PBO)
+
+class Book {
+    - title: str
+    - author: str
+    - isbn: str
+    - year: int
+    - genre: str
+    
+    + __init__(title: str, author: str, isbn: str, year: int, genre: str)
+    + __str__(): str
+    + get_info(): dict
+    + is_published_after(year: int): bool
+}
+
+@enduml
