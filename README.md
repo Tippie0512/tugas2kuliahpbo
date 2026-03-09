@@ -71,3 +71,16 @@ Semua test berhasil: 6 tests passed.
 
 ## Kesimpulan
 Implementasi ini menunjukkan konsep OOP dasar dengan class Book yang sederhana, didokumentasikan dengan UML, dan diuji dengan unit testing untuk memastikan kebenaran kode.
+
+classDiagram
+    class Book {
+        -String title
+        -String author
+        -String isbn
+        -int year
+        -String genre
+        +__init__(title, author, isbn, year, genre)
+        +__str__() String
+        +get_info() Dict
+        +is_published_after(year) Boolean
+    }
