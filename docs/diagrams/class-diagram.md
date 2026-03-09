@@ -1,3 +1,6 @@
+# Class Diagram - Book
+
+```mermaid
 classDiagram
     class Book {
         -String title
@@ -10,3 +13,5 @@ classDiagram
         +get_info() Dict
         +is_published_after(year) Boolean
     }
+    
+    note for Book "Tugas PBO - Class Book"
